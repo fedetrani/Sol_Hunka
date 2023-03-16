@@ -1,0 +1,135 @@
+/*FUENTE*/
+/*COLORES*/
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* End general styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  transition: background-color 0.5s;
+}
+header .container {
+  max-width: 120rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+header .navbar {
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  transition: height 0.25s;
+}
+header .logo {
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+header .logo img {
+  width: 7rem;
+  height: 6.5rem;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin-left: 10rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+header ul .nav-link {
+  transition: color 0.3s;
+}
+header ul .nav-link:hover {
+  color: #e324a4;
+}
+header ul li {
+  margin: 0 10px;
+}
+header ul li a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.8s;
+}
+header ul li a:hover, header ul li a:focus {
+  background-size: 100% 2px;
+}
+
+header.active {
+  background-color: #fff; /*o aca dejarlo en el celeste*/
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+
+header.active .navbar {
+  height: 6rem;
+}
+
+header.active .logo, header.active .nav-link {
+  color: #000000; /*antes: #313131*/
+}
+
+header.active .nav-link:hover {
+  color: #e324a4;
+}
+
+/* principal comienzo*/
+.principal {
+  width: 100%;
+  height: 85vh;
+  background: url(../img/solhunka.jpeg) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.principal::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.book-fotos {
+  width: 100%;
+  height: 200vh;
+  background-color: RED;
+}
+
+/* principal end*/
+#secundario {
+  display: none;
+}
+
+/*PRUEBA DE MEDIAQUERY*/
+
+/*# sourceMappingURL=style.css.map */
