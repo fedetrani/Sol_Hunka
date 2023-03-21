@@ -136,4 +136,20 @@ header.active .nav-link:hover {
   height: auto;
 }
 
+/*FUENTE*/
+/*COLORES*/
+footer {
+  width: 100%;
+  height: 25rem;
+  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+footer .foto_footer {
+  background-color: yellow;
+}
+footer .info_contacto {
+  background-color: blue;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 
 @import "_diseño";
 
+
 /* General styles */
 * {
 	margin: 0;
@@ -149,4 +150,7 @@ header.active .nav-link:hover {
     width: 100%;
     height: auto;
 }
+
+
+@import "_footer";
 
